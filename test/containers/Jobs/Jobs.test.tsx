@@ -8,7 +8,7 @@ describe('<Jobs />', () => {
   let component = typeof Jobs
 
   beforeEach(() => {
-    component = shallow(
+    component = mount(
       <Jobs />
     );
   });
