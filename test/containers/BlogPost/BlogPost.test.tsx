@@ -7,6 +7,7 @@ import Markdown from 'react-markdown';
 import ProgressBar from '@components/Blog/ProgressBar';
 import Category from '@components/Blog/Category';
 import BlogPost from '@containers/BlogPost/BlogPost';
+import WithData from '@containers/BlogPost/index';
 
 describe('<BlogPost />', () => {
   let component = typeof BlogPost;
@@ -121,3 +122,11 @@ describe('<BlogPost />', () => {
     });
   });
 });
+
+describe('With data', () => {
+  it('renders without crashing', () => {
+    const component = shallow(
+      <WithData />
+    );
+  })
+})
